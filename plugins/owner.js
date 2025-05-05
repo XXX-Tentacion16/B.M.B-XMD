@@ -2,8 +2,8 @@ const { cmd } = require('../command');
 const config = require('../config');
 
 cmd({
-    pattern: "owner",
-    react: "🔥", 
+    pattern: "Ja_Ka Gaming",
+    react: "😒", 
     desc: "256773469834",
     category: "main",
     filename: __filename
