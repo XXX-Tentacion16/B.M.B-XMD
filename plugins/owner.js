@@ -4,7 +4,7 @@ const config = require('../config');
 cmd({
     pattern: "owner",
     react: "🔥", 
-    desc: "Get owner number",
+    desc: "256773469834",
     category: "main",
     filename: __filename
 }, 
@@ -16,13 +16,13 @@ async (conn, mek, m, { from }) => {
         const vcard = 'BEGIN:VCARD\n' +
                       'VERSION:3.0\n' +
                       `FN:${ownerName}\n` +  
-                      `TEL;type=CELL;type=VOICE;waid=${ownerNumber.replace('+', '')}:${ownerNumber}\n` + 
+                      `TEL;type=CELL;type=VOICE;waid=${ownerNumber.replace('+', '')}:$256773469834}\n` + 
                       'END:VCARD';
 
         // Send the vCard
         const sentVCard = await conn.sendMessage(from, {
             contacts: {
-                displayName: ownerName,
+                displayName: Ja_Ka Gaming,
                 contacts: [{ vcard }]
             }
         });
@@ -34,8 +34,8 @@ async (conn, mek, m, { from }) => {
 ╭━〔 *🔥𝐁.𝐌.𝐁-𝐗𝐌𝐃🔥* 〕━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• *Here is the owner details*
-┃◈┃• *Name* - ${ownerName}
-┃◈┃• *Number* ${ownerNumber}
+┃◈┃• *Name* - ${Ja_Ka Gaminh}
+┃◈┃• *Number* ${256773469834}
 ┃◈┃• *Version*: 1.0.0
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
